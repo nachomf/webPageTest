@@ -1,0 +1,46 @@
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+
+}
+
+li a:hover {
+
+  background: white;
+  color: black;
+}
+
+div.cities {
+
+  background-color: #006D5B;
+  color: white;
+  text-align: center;
+  padding: 60px;
+
+}
+
+div.block {
+
+  background-color: #4EC0FF;
+  text-align: center;
+  padding: 60px;
+
+}

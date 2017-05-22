@@ -44,3 +44,13 @@ div.block {
   padding: 60px;
 
 }
+
+footer {
+  text-align: right;
+  color: black;
+  background-color: lightgray;
+}
+
+legend {
+  text-align: left;
+}

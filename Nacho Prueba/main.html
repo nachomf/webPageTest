@@ -17,10 +17,27 @@
     </div>
     <div class="block">
       <p id="currentDate" style="text-align:right"><b></b></p>
-      <h1>Argentina</h1>
+      <h1><u>Argentina</u></h1>
+      <div class="form">
+        <form method="post">
+          <fieldset>
+            <legend>Prueba de inputs</legend>
+            Input 1:
+            <input type="text" name="input1" value="Input 1">
+            <br>
+            <br>
+            Input 2:
+            <input type="radio" name="input2" value="Imput 2">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+      </div>
     </div>
     <script>
       document.getElementById('currentDate').innerHTML = new Date().toDateString();
     </script>
+    <footer><i>Nacho Test &spades; &clubs; &hearts; &diams; &copy;</i></footer>
     </body>
 </html>

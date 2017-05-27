@@ -2,42 +2,112 @@
 <html>
   <head>
     <link rel="stylesheet" href="main.css">
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Test</title>
   </head>
   <body>
-    <ul>
-      <li><a href="#Nacho">Nacho</a></li>
-      <li><a href="#Paz">Paz</a></li>
-      <li><a href="#Takas">Takas</a></li>
-    </ul>
-    <div class="cities">
-      <h1>LONDON</h1>
-      <p>London is the capital of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    </div>
-    <div class="block">
-      <p id="currentDate" style="text-align:right"><b></b></p>
-      <h1><u>Argentina</u></h1>
-      <div class="form">
-        <form method="post">
-          <fieldset>
-            <legend>Prueba de inputs</legend>
-            Input 1:
-            <input type="text" name="input1" value="Input 1">
-            <br>
-            <br>
-            <input type="radio" name="input2" value="Imput 2">
-            Input 2
-            <br>
-            <input type="radio" name="input2" value="Imput 3">
-            Input 3
-            <br>
-            <br>
-            <input type="submit" value="Submit">
-          </fieldset>
-        </form>
-      </div>
-    </div>
+    <header>
+      <ul>
+        <li><a href="#Nacho">Nacho</a></li>
+        <li><a href="#Paz">Paz</a></li>
+        <li><a href="#Takas">Takas</a></li>
+      </ul>
+    </header>
+    <section>
+      <article class="london">
+        <h2>LONDON</h2>
+        <p>London is the capital of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      </article>
+      <article class="argentina">
+        <p id="currentDate" style="text-align:right"><b></b></p>
+        <h2><u>Argentina</u></h2>
+        <div class="form">
+          <form method="post">
+            <fieldset>
+              <legend>Prueba de inputs</legend>
+              Input 1:
+              <input type="text" name="input1" value="Input 1">
+              <br>
+              <br>
+              <input type="radio" name="input2" value="Imput 2">
+              Input 2
+              <br>
+              <input type="radio" name="input2" value="Imput 3">
+              Input 3
+              <br>
+              <br>
+              <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+        </div>
+      </article>
+      <article class="spain">
+        <h2 style="text-align: left"><u>Spain</u></h2>
+      </article>
+    </section>
+    <section id="canvas">
+      <h2><u>Probando Canvas</u></h2>
+      <article class="line">
+        <canvas id="line-draw"></canvas>
+        <script>
+          var c = document.getElementById("line-draw");
+          var ctx = c.getContext("2d");
+          ctx.moveTo(0,0);
+          ctx.lineTo(600,300);
+          ctx.stroke();
+        </script>
+      </article>
+      <article class="circle">
+        <canvas id="circle-draw"></canvas>
+        <script>
+          var c = document.getElementById("circle-draw");
+          var ctx = c.getContext("2d");
+          ctx.arc(95,50,40,0,2*Math.PI);
+          ctx.stroke();
+        </script>
+      </article
+
+
+      >
+      <article class="stroke-text">
+        <canvas id="stroke-text"></canvas>
+        <script>
+          var c = document.getElementById("stroke-text");
+          var ctx = c.getContext("2d");
+          ctx.font = "30px Arial";
+          ctx.strokeText("Nacho",50,50);
+        </script>
+      </article>
+      <article class="gradient">
+        <canvas id="gradient"></canvas>
+        <script>
+          var c = document.getElementById("gradient");
+          var ctx = c.getContext("2d");
+
+          //gradient
+          var grd = ctx.createLinearGradient(0,0,400,50);
+          grd.addColorStop(0,"blue");
+          grd.addColorStop(1,"white");
+
+          //Fill de gradient
+          ctx.fillStyle = grd;
+          ctx.fillRect(0,0,400,200);
+        </script>
+      </article>
+      <article class="picture">
+        <canvas id="picture"></canvas>
+        <script>
+          var c = document.getElementById("picture");
+          var ctx = c.getContext("2d");
+          var img = new Image();
+          img.src = "https://www.w3schools.com/html/img_the_scream.jpg";
+          img.onload = function() {
+            ctx.drawImage(img,0,0,300,160);
+          }
+        </script>
+      </article>
+    </section>
     <script>
       document.getElementById('currentDate').innerHTML = new Date().toDateString();
     </script>

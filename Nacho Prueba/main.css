@@ -95,14 +95,19 @@ h2 {
 }
 
 #CssSection {
-  text-align: center;
   background: url("http://templatemints.com/rttheme13/images/background_images/abstract_background7.jpg") no-repeat center center fixed;
   background-size: cover;
   background-attachment: local;
   background-repeat: no-repeat;
   padding: 150px;
+  text-align: center;
 }
 
 #CssTitle {
   text-decoration: underline;
+}
+
+.icon {
+   margin-top: 5%;
+   font-size: 220px !important;
 }

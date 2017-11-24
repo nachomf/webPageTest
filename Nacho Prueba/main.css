@@ -1,3 +1,12 @@
+/*Saca los margenes de la página*/
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+}
+
 ul {
 
   list-style-type: none;
@@ -37,7 +46,7 @@ article.london {
 
 }
 
-article.argentina {
+.argentina {
 
   background-color: #4EC0FF;
   text-align: center;
@@ -49,6 +58,7 @@ footer {
   text-align: right;
   color: black;
   background-color: lightgray;
+  font-family: Roboto;
 }
 
 legend {
@@ -74,11 +84,21 @@ canvas {
   height: 300px;
 }
 
-  canvas#picture {
+#picture {
     height: 600px;
     width: 50%;
-  }
+}
 
 h2 {
   font-size: 30px;
+  font-family: Roboto;
+}
+
+#CssSection {
+  text-align: center;
+  background: url("http://templatemints.com/rttheme13/images/background_images/abstract_background7.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  padding: 150px;
 }

@@ -87,6 +87,7 @@ canvas {
 #picture {
     height: 600px;
     width: 50%;
+    max-width: 50%;
 }
 
 h2 {
@@ -110,4 +111,31 @@ h2 {
 .icon {
    margin-top: 5%;
    font-size: 220px !important;
+}
+
+/*muy importante como mover objetos
+absolute: lo hace con respecto a la pantalla
+relative: lo hace con respecto a la posición en la que esta
+fixed: simpre aparece en la pantalla
+sticky: cambia entre relative y fixed*/
+
+.button-top {
+  border: 1px solid;
+  margin-top: 50px;
+  position: absolute;
+  right: 1%;
+}
+
+.button-top:link, .button-top:active {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: white;
+  padding: 14px 25px;
+  display: inline-block;
+}
+
+.button-top:hover, .button-top:active {
+  color: white;
+  background-color: black;
 }

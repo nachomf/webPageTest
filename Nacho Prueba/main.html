@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="main.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Test</title>
@@ -109,7 +109,7 @@
     </section>
     <section id="CssSection">
       <article>
-        <h2 id="CssTitle" style="margin-top: -120px;">Empezando el curso de CSS</h2>
+        <h2 class="seccion-tittle" style="margin-top: -120px;">Empezando el curso de CSS</h2>
         <div>
           <i class="fa fa-bar-chart icon" aria-hidden="true"></i>
           <p>This is an Icon from Font Awesome</p>
@@ -119,13 +119,27 @@
           <p>This is an Icon from Font Awesome</p>
         </div>
         <div class="fixed-section">
-          <a href="#top" target="_top" class="button-top">Ir arriba</a>
+          <a href="#top" target="_top" class="button-top">
+            <i class="fa fa-arrow-up"></i>
+          </a>
         </div>
       </article>
     </section>
-    <script>
-      document.getElementById('currentDate').innerHTML = new Date().toDateString();
-    </script>
+    <section id="JsSection">
+      <article>
+        <h2 class="seccion-tittle" style="margin-top: -120px;">Empezando el curso de JS</h2>
+        <div class="center">
+          <button onclick="document.getElementById('currentDateButton').innerHTML = new Date().toDateString()">Mostrat Fecha Actual</button>
+          <p id="currentDateButton">Aca va la fecha actual</p>
+        </div>
+        <div class="center">
+          <button onclick="turnTheLightOn()">Prender</button>
+          <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+          <button onclick="turnTheLightOff()">Apagar</button>
+        </div>
+      </article>
+    </section>
+    <script src="main.js"></script>
     <footer><i>Nacho Test &spades; &clubs; &hearts; &diams; &copy;</i></footer>
     </body>
 </html>

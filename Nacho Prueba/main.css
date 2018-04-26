@@ -96,7 +96,7 @@ h2 {
 }
 
 #CssSection {
-  background: url("http://templatemints.com/rttheme13/images/background_images/abstract_background7.jpg") no-repeat center center fixed;
+  background: url("https://www.bypeople.com/wp-content/uploads/2015/05/css-gradient-background.png") no-repeat center center fixed;
   background-size: cover;
   background-attachment: local;
   background-repeat: no-repeat;
@@ -119,10 +119,15 @@ relative: lo hace con respecto a la posición en la que esta
 fixed: simpre aparece en la pantalla
 sticky: cambia entre relative y fixed*/
 
-.button-top {
+.fixed-section {
+  position: fixed;
+  bottom: 10px;
+  right: 5%;
+}
+
+.button-top{
   border: 1px solid;
   margin-top: 50px;
-  position: absolute;
   right: 1%;
 }
 

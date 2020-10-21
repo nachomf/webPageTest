@@ -10,10 +10,10 @@
   </head>
   <body>
     <header>
-      <ul>
-        <li><a href="#Nacho">Nacho</a></li>
-        <li><a href="#Paz">Paz</a></li>
-        <li><a href="#Takas">Takas</a></li>
+      <ul class="header">
+        <li class="header"><a href="#Nacho">Nacho</a></li>
+        <li class="header"><a href="#Paz">Paz</a></li>
+        <li class="header"><a href="#Takas">Takas</a></li>
       </ul>
     </header>
     <section>
@@ -141,9 +141,23 @@
           <button id="alertButton" onclick="displayAlert('Alerta')">Alerta</button>
           <button onclick="print()" onmouseover="turnTheLightOn()">Imprimir Página</button>
         </div>
+        <div id="json" class="center element">
+          <p>Json a mostrar
+            <br> 
+              {"employees":[' +
+            <br>
+              '{"firstName":"John","lastName":"Doe" },' +
+            <br>
+              '{"firstName":"Anna","lastName":"Smith" },' +
+            <br>
+              '{"firstName":"Peter","lastName":"Jones" }]};
+          </p>
+          <div id="jsonValues"></div>
+        </div>
       </article>
     </section>
-    <script src="main.js"></script>
+    <script src="main.js">
+    </script>
     <footer><i>Nacho Test &spades; &clubs; &hearts; &diams; &copy;</i></footer>
     </body>
 </html>

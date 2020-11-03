@@ -1,6 +1,7 @@
 window.addEventListener("load", function(){
   document.getElementById('currentDate').innerHTML = new Date().toDateString();
   showJsonNames ();
+  setInterval(setCurrentDate,1000);
 });
 
 function turnTheLightOn() {
@@ -39,4 +40,22 @@ function showJsonNames() {
   });
 
   divJsonValues.appendChild(ul);
+}
+
+function setCurrentDate(){
+  var date = new Date();
+
+  document.getElementById("realTimeHour").innerHTML = 'La hora real es ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+}
+
+function changeParagraph(){
+  let oldParagraph = document.getElementById("changeParagraph");
+  let newParagraph = document.createElement("p");
+  newParagraph.id = "changeParagraph";
+  if (oldParagraph.innerText == "Nuevo Parrafo") { newParagraph.innerText = "Viejo Parrafo";
+  newParagraph.style.color = "blue"}; 
+  if (oldParagraph.innerText == "Viejo Parrafo") { newParagraph.innerText = "Nuevo Parrafo";
+  newParagraph.style.color = "red"}; 
+  
+  oldParagraph.replaceWith(newParagraph);
 }

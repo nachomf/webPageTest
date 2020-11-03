@@ -5,6 +5,7 @@ body{
     margin-left: 0px;
     margin-right: 0px;
     padding: 0;
+    font-family: 'Roboto';
 }
 
 ul {
@@ -176,4 +177,25 @@ sticky: cambia entre relative y fixed*/
 .jsonValuesLi {
   float: none !important;
   text-align: initial !important;
+}
+
+#animation img{
+  max-width: 20%;
+  height: auto;
+  -webkit-animation: rotation 10s linear infinite;
+  -moz-animation: rotation 10s linear infinite;
+  -ms-animation: rotation 10s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  0%   { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes rotation {
+  0%   { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes rotation {
+  0%   { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(360deg); }
 }
